@@ -1,3 +1,6 @@
 FROM node:5.4
 
-RUN npm install -g vue-cli gulp
+ENV VUE_CLI_VERSION=1.3.0 GULP_VERSION=3.9.0
+
+RUN npm install -g vue-cli@$VUE_CLI_VERSION gulp@$GULP_VERSION
+
