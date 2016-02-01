@@ -20,3 +20,5 @@ RUN docker-php-ext-install \
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --version=1.0.0-alpha11 \
  && mv composer.phar /usr/local/bin/composer
+
+RUN a2enmod rewrite
